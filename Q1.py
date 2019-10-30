@@ -1,9 +1,12 @@
-for i in range(1,101):
+def print_numbers(i):
   if ((i%3)==0) and ((i%5)==0):
-    print("WorldPeace")
+    return "WorldPeace"
   elif (i%3)==0:
-    print("World")
+    return "World"
   elif (i%5)==0:
-    print("Peace")
+    return "Peace"
   else:
-    print(i)
+    return i
+
+for n in range(1,101):
+  print(print_numbers(n))
